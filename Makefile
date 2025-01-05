@@ -7,4 +7,5 @@ run:
 	cargo build --target wasm32-wasi
 	wasmer ./target/wasm32-wasi/debug/wasm_sample.wasm
 build:
+	make setup
 	make run
