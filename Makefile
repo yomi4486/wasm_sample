@@ -8,4 +8,5 @@ run:
 	wasmer ./target/wasm32-wasi/debug/wasm_sample.wasm
 build:
 	make setup
+	export PYO3_PYTHON=$(which python3)
 	make run
